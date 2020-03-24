@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Moon Miner</title>
+  </head>
+  <body>
+
+    <header class="container-fluid bg-dark text-light">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class=>Moon Miner</h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="containder-fluid bg-dark text-light">
+      <div class="row align-items-center">
+        <h2 class="col-6 line text-center">Cheese: 
+            <span id="cheese">0</span>
+            <div class="row justify-content-center">
+              <col-12 class="m-2">
+              <button id="pickaxes" class="btn btn-primary btn-lg" onclick="app.gameController.buy('pickaxes')" >pickaxes for 20
+                
+              </button>
+              <span id="pickaxes-count">0</span>
+              <span id="pickaxes-bonus">(0)</span>
+              </col-12>
+            </div>
+            <div class="row justify-content-center">
+              <col-12 class="m-2">
+              <button id="megaaxes" class="btn btn-primary btn-lg" onclick="app.gameController.buy('megaaxes')" >megaaxes for 100</button>
+              <span id="megaaxes-count">0</span>
+              <span id="megaaxes-bonus">(0)</span>
+              </col-12>
+            </div>
+            <div class="row justify-content-center">
+              <col-12 class="m-2">
+              <button id="minors" class="btn btn-primary btn-lg" onclick="app.gameController.buy('minors')"  >minors for 150</button>
+              <span id="minors-count">0</span>
+              <span id="minors-bonus">(0)</span>
+              </col-12>
+            </div>
+            <div class="row justify-content-center">
+              <col-12 class="m-2">
+              <button id="rovers" class="btn btn-primary btn-lg" onclick="app.gameController.buy('rovers')">rovers for 600</button>
+              <span id="rovers-count">0</span>
+              <span id="rovers-bonus">(0)</span>
+              </col-12>
+            </div>
+        </h2>
+        <div class="col-6 bg-dark" >
+          <img class="rounded img-fluid" src="https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fresize%3D2000%252C2000%252Cshrink%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-uploaded-images%252F2018-11%252F4c1a3480-f410-11e8-a5ad-73a4abd75550%26client%3Da1acac3e1b3290917d92%26signature%3D76193f17f9c4e27cfe4dc0d0042c02591d2b0721&client=amp-blogside-v2&signature=cd21554b83c9614b62f10fa91ee0bd7ba5b7d8be
+          " alt="" class="img-fluid x-line" onclick="app.gameController.mine()" >
+        </div>
+      </div> 
+
+    </main>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="module" src="./app/main.js"></script>
+  </body>
+</html>
