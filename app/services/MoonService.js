@@ -36,9 +36,7 @@ export default class GameService {
 
     let upgrade = _target.upgrades[item]
 
-    if (_target.cheese < upgrade.cost ) {
-      return {item: "<no-item>"}
-    }
+    if (_target.cheese < upgrade.cost ) {return {item: "<no-item>"} }
     _target.cheese -= upgrade.cost
     _target.clickBonus += upgrade.clickBonus
     _target.autoBonus  += upgrade.autoBonus
@@ -66,6 +64,6 @@ export default class GameService {
 
 
   constructor() {
-    console.log("hello from gameService")
+    //console.log("hello from gameService")
   }
 }

@@ -12,13 +12,17 @@ function _draw() {
 
 function _drawItem(elm){
   //console.log(elm)
-  if (elm.item ="<no-item>") { return}
+  if (elm.item =="<no-item>") { return}
 
   document.getElementById(elm.item).innerText =  elm.item + " for " + (elm.price).toString()
   document.getElementById(elm.item + "-count").innerText = (elm.quantity).toString()
   document.getElementById(elm.item + "-bonus").innerText = "(+" + (elm.bonus).toString() + ")"
 
 }
+
+//function _startInterval(){
+//  let collectionInterval = setInterval(this.collectAutoUpgrades, 3000);
+//}
 
 
 //NOTE public area 
@@ -51,7 +55,7 @@ export default class GameController {
 
   startInterval(){
     let collectionInterval = setInterval(this.collectAutoUpgrades, 3000);
-  
+
   }
 
 }
